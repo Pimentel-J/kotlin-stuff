@@ -1,7 +1,9 @@
 package com.stuff.basic
 
 /**
- * A set of functions to search for numbers, according to a certain criteria
+ * A set of functions to search for numbers, according to a certain criteria.
+ *
+ * @author Pimentel
  */
 class SearchNumbers() {
 
