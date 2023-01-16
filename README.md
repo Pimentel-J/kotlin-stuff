@@ -7,10 +7,12 @@
 
 A small collection of Kotlin algorithms.
 
+### [Basic Stuff](./src/main/kotlin/com/stuff/basic)
 
-1. [Basic Stuff](./src/main/kotlin/com/stuff/basic/)
-
-2. *In progress...*
+| Class                                                                  | Unit Tests                                                                  |
+|------------------------------------------------------------------------|-----------------------------------------------------------------------------|
+| 1. [NumbersSearch](./src/main/kotlin/com/stuff/basic/NumbersSearch.kt) | [NumbersSearchTest](./src/test/kotlin/com/stuff/basic/NumbersSearchTest.kt) |
+| 2. *In progress...*                                                    |                                                                             |
 
 
 ## License
