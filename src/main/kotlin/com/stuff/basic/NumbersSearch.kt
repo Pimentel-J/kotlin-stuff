@@ -5,10 +5,10 @@ package com.stuff.basic
  *
  * @author Pimentel
  */
-class SearchNumbers() {
+class NumbersSearch() {
 
     /**
-     * Determines the highest integer of a given list
+     * Searches for the highest integer of a given list
      *
      * @param numbers list of integers
      * @return highest integer
