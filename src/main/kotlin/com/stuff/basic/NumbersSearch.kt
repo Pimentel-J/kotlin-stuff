@@ -34,15 +34,15 @@ class NumbersSearch() {
      */
     fun findNumbers(numbers: List<Int>, numbersToSearch: List<Int>): Boolean {
         var found = false
-        var n = 0
+        var currentIndex = 0
 
-        numbersToSearch.forEach { seqNum ->
+        numbersToSearch.forEach { numToSearch ->
             found = false
 
-            for (i in n until numbers.size) {
-                if (numbers[i] == seqNum) {
+            for (i in currentIndex until numbers.size) {
+                if (numbers[i] == numToSearch) {
                     found = true
-                    n += numbers.indexOf(numbers[i]) + 1
+                    currentIndex += numbers.indexOf(numbers[i]) + 1
                     break
                 }
             }
@@ -50,4 +50,21 @@ class NumbersSearch() {
         return found
     }
 
+    /**
+     * Recursively searches a list of integers for the selected numbers and if the order is the same
+     *
+     * @param numbers   list of integers
+     * @param numbersToSearch  list of integers, with the numbers to search for
+     *
+     * @return true if the numbers exist in the list and in the same order, and false otherwise
+     */
+    fun findNumbersRecursion(numbers: List<Int>, numbersToSearch: List<Int>, found: Boolean): Boolean {
+        if (numbers.isEmpty() or numbersToSearch.isEmpty()) return found
+
+        if (numbersToSearch.first() == numbers.first()) {
+            return findNumbersRecursion(numbers.subList(1, numbers.size), numbersToSearch.drop(1), true)
+        }
+
+        return findNumbersRecursion(numbers.subList(1, numbers.size), numbersToSearch, false)
+    }
 }

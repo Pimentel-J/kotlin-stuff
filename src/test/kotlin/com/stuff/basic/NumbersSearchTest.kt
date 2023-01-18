@@ -26,4 +26,13 @@ internal class NumbersSearchTest {
         result = NumbersSearch().findNumbers(testNumbersList, listOf(5324, 9770, 713))
         assertEquals(false, result)
     }
+
+    @Test
+    fun findNumbersRecursion() {
+        var result = NumbersSearch().findNumbersRecursion(testNumbersList, listOf(5324, 713, 3843), false)
+        assertEquals(true, result)
+
+        result = NumbersSearch().findNumbersRecursion(testNumbersList, listOf(5324, 9770, 713), false)
+        assertEquals(false, result)
+    }
 }
