@@ -1,4 +1,4 @@
-package com.stuff.basic
+package com.stuff
 
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Assertions.*

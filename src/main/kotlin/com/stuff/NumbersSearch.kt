@@ -1,4 +1,4 @@
-package com.stuff.basic
+package com.stuff
 
 /**
  * A set of functions to search for numbers, according to a certain criteria.
