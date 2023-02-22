@@ -7,11 +7,12 @@
 
 A small collection of Kotlin algorithms.
 
-| Class                                                           | Unit Tests                                                                       |
-|-----------------------------------------------------------------|----------------------------------------------------------------------------------|
-| 1. [Numbers Search](src/main/kotlin/com/stuff/NumbersSearch.kt) | <div align="center">[🔗](src/test/kotlin/com/stuff/NumbersSearchTest.kt) </div>  |
-| 2. *In progress...*                                             |                                                                                  |
+## Index
 
+| Class                                                             | Unit Tests                                                                       |
+|-------------------------------------------------------------------|----------------------------------------------------------------------------------|
+| 1. [Search Integers](src/main/kotlin/com/stuff/SearchIntegers.kt) | <div align="center">[🔗](src/test/kotlin/com/stuff/SearchIntegersTest.kt) </div> |
+| 2. *In progress...*                                               |                                                                                  |
 
 ## License
 
